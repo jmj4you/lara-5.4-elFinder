@@ -10,6 +10,7 @@ return array(
     | The dir where to store the images (relative from public)
     |
     */
+    // This was cousing all the errors.
     'dir' => ['files'],
 
     /*
@@ -40,7 +41,7 @@ return array(
 
     'route' => [
         'prefix' => 'elfinder',
-        'middleware' =>'',// 'replace-this-with-your-middleware', //Set to null to disable middleware filter
+        'middleware' => null,  //Set to null to disable middleware filter
     ],
 
     /*

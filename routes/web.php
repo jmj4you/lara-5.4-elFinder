@@ -11,10 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
-Route::get('/filemanager', '\Barryvdh\Elfinder\ElfinderController@showIndex');
-//Route::get('/elfinder/connector', '\Barryvdh\Elfinder\ElfinderController@showConnector');
+Route::get('/', '\Barryvdh\Elfinder\ElfinderController@showIndex');
+Route::get('/elfinder/connector', '\Barryvdh\Elfinder\ElfinderController@showConnector');
